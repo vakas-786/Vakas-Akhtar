@@ -11,17 +11,18 @@ export const Projects = () => {
   const {
     github: {
       viewer: {
-        repositories: { edges },
+        pinnedItems: { edges },
       },
     },
   } = useStaticQuery(
     graphql`
-      {
-        github {
-          viewer {
-            repositories(first: 8, orderBy: { field: STARGAZERS, direction: DESC }) {
-              edges {
-                node {
+    {
+      github {
+        viewer {
+          pinnedItems(first: 5) {
+            edges {
+              node {
+                ... on GitHub_Repository {
                   id
                   name
                   url
@@ -36,7 +37,8 @@ export const Projects = () => {
           }
         }
       }
-    `
+    }
+  `
   );
   return (
     <Wrapper as={Container} id="projects">
