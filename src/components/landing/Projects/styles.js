@@ -63,3 +63,14 @@ export const Stats = styled.div`
     }
   }
 `;
+
+export const LanguageWrap = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  `;
+
+export const Language = styled.div`
+  opacity: 0.5;
+  font-size: 14px;
+`;

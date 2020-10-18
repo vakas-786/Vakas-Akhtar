@@ -54,3 +54,13 @@ export const Details = styled.div`
     margin-bottom: 2rem;
   }
 `;
+
+export const Item = styled.img`
+  margin: 0 0.2rem;
+  ${({ img }) =>
+    img &&
+    `
+    position: relative;
+    top: .15rem;
+  `};
+`;

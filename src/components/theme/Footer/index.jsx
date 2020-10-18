@@ -1,7 +1,11 @@
 import React from 'react';
 import { Container } from 'components/common';
-import { Wrapper, Flex, Links, Details } from './styles';
+import { Wrapper, Flex, Links, Details, Item } from './styles';
 import social from './social.json';
+import GatsbyIcon from './gatsby.svg'
+import VercelIcon from './vercel.svg'
+
+
 
 export const Footer = () => (
   <Wrapper>
@@ -9,13 +13,13 @@ export const Footer = () => (
       <Details>
         <h2>Vakas Akhtar</h2>
         <span>
-          © Vakas Akhtar | {new Date().getFullYear()} | Made with{' '}
-          <span aria-label="love" role="img">
-            💖
-          </span>{' '}
-          by{' '}
-          <a href="https://smakosh.com/?ref=portfolio-dev" rel="noopener noreferrer" target="_blank">
-            Gatsby Starter Template
+          © Vakas Akhtar | {new Date().getFullYear()} | Built with{' '}
+          <a href="https://www.gatsbyjs.com/" rel="noopener noreferrer" target="_blank">
+            <Item width="24" src={GatsbyIcon} img alt="Gatsby" />
+          </a>{' '}
+          hosted on{' '}
+          <a href="https://vercel.com/" rel="noopener noreferrer" target="_blank">
+            <Item width='24' src={VercelIcon} img alt='vercel'/>
           </a>
         </span>
       </Details>

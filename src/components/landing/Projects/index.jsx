@@ -4,7 +4,7 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Card } from 'components/common';
 import Star from 'components/common/Icons/Star';
 import Fork from 'components/common/Icons/Fork';
-import { Wrapper, Grid, Item, Content, Stats } from './styles';
+import { Wrapper, Grid, Item, Content, Stats, Language, LanguageWrap } from './styles';
 
 export const Projects = () => {
   const { theme } = useContext(ThemeContext);
@@ -31,6 +31,12 @@ export const Projects = () => {
                     totalCount
                   }
                   forkCount
+                  languages(first: 2, orderBy: {field: SIZE, direction: DESC} ){
+                    nodes{
+                      id
+                      name
+                    }
+                  }
                 }
               }
             }
@@ -51,6 +57,7 @@ export const Projects = () => {
                 <h4>{node.name}</h4>
                 <p>{node.description}</p>
               </Content>
+              <LanguageWrap>
               <Stats theme={theme}>
                 <div>
                   <Star color={theme === 'light' ? '#000' : '#fff'} />
@@ -61,6 +68,14 @@ export const Projects = () => {
                   <span>{node.forkCount}</span>
                 </div>
               </Stats>
+              <Stats theme={theme}>
+                <Language>
+                  {node.languages.nodes.map(({ id, name }) => (
+                    <span key={id}>{name}</span>
+                  ))}
+                </Language>
+              </Stats>
+              </LanguageWrap>
             </Card>
           </Item>
         ))}
