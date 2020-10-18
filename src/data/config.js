@@ -4,7 +4,7 @@ module.exports = {
   author: 'Vakas Akhtar',
   url: 'https://portfolio.smakosh.com',
   legalName: 'Vakas Akhtar',
-  defaultDescription: 'I’m Vakas and I’m a Backend & Devops engineer!',
+  defaultDescription: 'I’m Vakas and I’m a full stack developer!',
   socialLinks: {
     github: 'https://github.com/vakas-786/',
     linkedin: 'https://www.linkedin.com/in/vakas-akhtar-a4bb30170/',
@@ -26,5 +26,5 @@ module.exports = {
     email: 'email',
     phone: 'phone number',
   },
-  foundingDate: '2018',
+  foundingDate: '2020',
 };
