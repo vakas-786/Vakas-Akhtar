@@ -17,10 +17,10 @@ export const Skills = () => {
         <Details theme={theme}>
           <h1>More About Me</h1>
           <p>
-          I graduated in May with a Bachelors degree in Economics from Fordham University and recently completed a coding bootcamp at the Flatiron School. My passion for behavioral economics inspired me to learn how to develop tools that individuals can use to one day empower themselves and improve their quality of life.
+          I graduated in May with a Bachelors degree in Economics from Fordham University and recently completed a coding bootcamp at the Flatiron School. My passion for behavioral economics inspired me to learn how to develop tools that individuals can use to one day empower themselves and improve their quality of life. I'm looking forward to learning new technologies and driving innovation with my future teams!
           </p>
           <Button as={AnchorLink} href="#contact">
-            Hire me
+            Contact me
           </Button>
         </Details>
       </SkillsWrapper>

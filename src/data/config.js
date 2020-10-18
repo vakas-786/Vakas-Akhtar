@@ -8,7 +8,6 @@ module.exports = {
   socialLinks: {
     github: 'https://github.com/vakas-786/',
     linkedin: 'https://www.linkedin.com/in/vakas-akhtar-a4bb30170/',
-    instagram: 'https://instagram.com/smakosh19',
  },
   googleAnalyticsID: 'UA-88875900-4',
   themeColor: '#6b63ff',
